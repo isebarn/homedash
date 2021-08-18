@@ -9,7 +9,7 @@ import { mapActions } from 'vuex'
 import { mapFields } from 'vuex-map-fields'
 export default {
   mounted () {
-    this.$axios.get('/api/data').then((response) => {
+    this.$axios.get('http://192.168.31.16:3000/api/data').then((response) => {
       this.updateWeather(response.data)
     })
   },
