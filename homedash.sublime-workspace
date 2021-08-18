@@ -1,0 +1,1214 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getRawData"
+			],
+			[
+				"response",
+				"response_driver"
+			],
+			[
+				"add_",
+				"add_plate"
+			],
+			[
+				"response_",
+				"response_registration"
+			],
+			[
+				"plate",
+				"platedereg"
+			],
+			[
+				"met",
+				"method"
+			],
+			[
+				"btn",
+				"button"
+			],
+			[
+				"vue",
+				"vuex-map-fields"
+			],
+			[
+				"lo",
+				"loading_ship"
+			],
+			[
+				"load",
+				"loading_ship"
+			],
+			[
+				"pp",
+				"pprint"
+			],
+			[
+				"a",
+				"authenticated_user"
+			],
+			[
+				"prop",
+				"property_match"
+			],
+			[
+				"ship",
+				"shipment_status"
+			],
+			[
+				"if",
+				"ifmain"
+			],
+			[
+				"carrier",
+				"carrier_tracking_no"
+			],
+			[
+				"carr",
+				"carrier_tracking_no"
+			],
+			[
+				"orde",
+				"order_item"
+			],
+			[
+				"wild",
+				"Wildcard"
+			],
+			[
+				"wil",
+				"wildcard_item"
+			],
+			[
+				"pro",
+				"processed_orders"
+			],
+			[
+				"O",
+				"ObjectIdString"
+			],
+			[
+				"order",
+				"order_item"
+			],
+			[
+				"muni",
+				"municipality"
+			],
+			[
+				"Te",
+				"template"
+			],
+			[
+				"place",
+				"place_order_yellow"
+			],
+			[
+				"yell",
+				"yellow_plate_order"
+			],
+			[
+				"ma",
+				"mapGetters"
+			],
+			[
+				"yello",
+				"yellow_plate_order"
+			],
+			[
+				"trea",
+				"translate_wrap"
+			],
+			[
+				"regi",
+				"registrations"
+			],
+			[
+				"Obj",
+				"ObjectIdString"
+			],
+			[
+				"requ",
+				"request"
+			],
+			[
+				"retu",
+				"return_doc"
+			],
+			[
+				"flask_",
+				"flask_restx"
+			],
+			[
+				"send_ye",
+				"send_yellow_plate_order"
+			],
+			[
+				"yellow_order",
+				"yellow_order_update"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"new buil",
+				"Build: New Build System"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"snippet edi",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"trailing",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"syntax vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"edit",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"diff",
+				"Diffy Compare"
+			],
+			[
+				"snipp",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"json",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"sni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"folders",
+				"Project: Refresh Folders"
+			],
+			[
+				"syntax javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"j",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"termina",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"compare",
+				"Diffy Compare"
+			],
+			[
+				"requester ser",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"requester online",
+				"Requester: Show Documentation (Online)"
+			],
+			[
+				"seri",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"add fo",
+				"Project: Add Folder"
+			],
+			[
+				"serially",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"request ser",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"seriall",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"confi",
+				"python-black: Create Black Configuration File"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"requester",
+				"Requester: Run Requests"
+			],
+			[
+				"requester seri",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"request seri",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"requester seria",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"requester run",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"save project",
+				"Project: Save As"
+			],
+			[
+				"snippet make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"edit sn",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"terminal",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"requests run",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"requester run ser",
+				"Requester: Run Requests Serially"
+			],
+			[
+				"requester show",
+				"Requester: Show Interactive Tutorial"
+			],
+			[
+				"requester test",
+				"Requester: Show Documentation (Online)"
+			],
+			[
+				"settings",
+				"Preferences: Trailing Spaces Settings"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"white",
+				"Trim Trailing White Space"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"make sni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"reque",
+				"Requester: Run Requests"
+			],
+			[
+				"req",
+				"Requester: Replay Request"
+			],
+			[
+				"request",
+				"Requester: Settings"
+			],
+			[
+				"syntax pyt",
+				"Set Syntax: Python"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/david/homedash"
+	],
+	"file_history":
+	[
+		"/home/david/homedash/pages/dashboard.vue",
+		"/home/david/test.js",
+		"/home/david/.config/sublime-text/Packages/User/js.sublime-build",
+		"/home/david/plates/web/store/order.js",
+		"/home/david/plates/web/components/order/orders.vue",
+		"/home/david/dereg.json",
+		"/home/david/plates/truckoo/python/endpoints/order.py",
+		"/home/david/plates/web/plugins/api.js",
+		"/home/david/plates/web/components/order/create/deregister.vue",
+		"/home/david/plates/web/store/orders/create.js",
+		"/home/david/plates/truckoo/python/lib/order.py",
+		"/home/david/plates/web/components/order/processed.vue",
+		"/home/david/plates/web/components/order/shipment.vue",
+		"/home/david/plates/truckoo/python/venv/bin/activate",
+		"/home/david/plates/truckoo/python/lib/m5_base_app.py",
+		"/home/david/red.json",
+		"/home/david/plates/web/pages/admin.vue",
+		"/home/david/plates/web/components/order/create/plates.vue",
+		"/home/david/plates/web/components/order/create/review.vue",
+		"/home/david/plates/web/components/order/create/reviewDeregistration.vue",
+		"/home/david/.config/sublime-text/Packages/User/Snippets/platered.sublime-snippet",
+		"/home/david/plates/web/pages/create.vue",
+		"/home/david/plates/web/nuxt.config.js",
+		"/home/david/plates/truckoo/python/endpoints/cloud_storage.py",
+		"/home/david/.config/sublime-text/Packages/User/Snippets/platedereg.sublime-snippet",
+		"/home/david/plates/truckoo/python/venv/lib/python3.9/site-packages/py/_vendored_packages/apipkg-1.5.dist-info/INSTALLER",
+		"/home/david/plates/web/plugins/mongo.js",
+		"/home/david/plates/web/plugins/filters.js",
+		"/home/david/plates/web/pages/index.vue",
+		"/home/david/test3/hello.py",
+		"/home/david/plates/web/pages/dealer.vue",
+		"/home/david/plates/truckoo/python/truckoo-dev-b3667db53e90.json",
+		"/home/david/plates/truckoo/python/lib/todo.txt",
+		"/home/david/plates/web/layouts/default.vue",
+		"/home/david/plates/web/components/processed.vue",
+		"/home/david/plates/web/components/order/management/processed.vue",
+		"/home/david/plates/web/pages/admin/index.vue",
+		"/home/david/plates/web/pages/dealer/index.vue",
+		"/home/david/plates/truckoo/python/plate_tests.pyr",
+		"/home/david/.config/sublime-text/Packages/User/Snippets/plateyellow.sublime-snippet",
+		"/home/david/plates/web/components/order/create/type.vue",
+		"/home/david/plates/truckoo/python/utils/flask_restx.py",
+		"/home/david/test/pages/index.vue",
+		"/home/david/test2/pages/index.vue",
+		"/home/david/test2/nuxt.config.js",
+		"/home/david/plates/truckoo/python/main.py",
+		"/home/david/plates/web/.env",
+		"/home/david/plates/web/pages/create/index.vue",
+		"/home/david/plates/web/pages/order/create.vue",
+		"/home/david/plates/web/pages/order/index.vue",
+		"/home/david/plates/web/middleware/auth.js",
+		"/home/david/plates/web/pages/login.vue",
+		"/home/david/plates/web/pages/dealer/create.vue",
+		"/home/david/test/layouts/default.vue",
+		"/home/david/plates/web/untitled.vue",
+		"/home/david/plates/web/components/order/create/customer.vue",
+		"/home/david/plates/web/components/order/create/carrier.vue",
+		"/home/david/plates/web/plugins/users.js",
+		"/home/david/plates/web/components/order/create/municipality.vue",
+		"/home/david/plates/web/components/order/history.vue",
+		"/home/david/plates/web/pages/management.vue",
+		"/home/david/plates/web/components/order/management/history.vue",
+		"/home/david/plates/web/components/order/management/shipment.vue",
+		"/home/david/plates/web/components/order/management/orders.vue",
+		"/home/david/plates/web/store/management.js",
+		"/home/david/plates/web/store/orders/order.js",
+		"/home/david/plates/dereg_state",
+		"/home/david/plates/truckoo/python/utils/mongo/__init__.py",
+		"/home/david/plates/web/package.json",
+		"/home/david/plates/truckoo/python/utils/crontab/__init__.py",
+		"/home/david/todo.txt",
+		"/home/david/platform_api/venv/bin/activate",
+		"/home/david/plates/truckoo/python/utils/filters.py",
+		"/home/david/plates/truckoo/python/utils/Models.py",
+		"/home/david/plates/truckoo.sublime-project",
+		"/home/david/marketplace/src/services/auth-service.js",
+		"/home/david/plates/truckoo/python/utils/shipcloud/__init__.py",
+		"/home/david/plates/truckoo/python/test.py",
+		"/home/david/plates/web/netlify.toml",
+		"/home/david/platform_api/process_analysis/utils/mongo/__init__.py",
+		"/home/david/plates/truckoo/python/questions.txt",
+		"/home/david/plates/truckoo/python/requests.pyr",
+		"/home/david/test/main.py",
+		"/home/david/plates/web/pages/order/completed.vue",
+		"/home/david/plates/web/plugins/vue-pdf.js",
+		"/home/david/platform_api/process_analysis/endpoints/cache.py",
+		"/home/david/platform_api/process_analysis/endpoints/export.py",
+		"/home/david/platform_api/process_analysis/endpoints/graphs.py",
+		"/home/david/platform_api/process_analysis/endpoints/__init__.py",
+		"/home/david/platform_api/process_analysis/endpoints/metrics.py",
+		"/home/david/plates/truckoo/python/endpoints/deregister.py",
+		"/home/david/plates/pyproject.toml",
+		"/home/david/plates/web/pages/order.vue",
+		"/home/david/drasl/dashboard/portdashboard/components/Ships.vue",
+		"/home/david/drasl/dashboard/scraper/scraper.py",
+		"/media/david/Touro/backup/david/.kvikna-archive/ssfta/api/appsettings.Development.json",
+		"/media/david/Touro/backup/david/.kvikna-archive/ssfta/api/appsettings.json",
+		"/home/david/drasl/dashboard/portdashboard/components/ToDoList.vue",
+		"/home/david/plates/web/components/order/management/plates.vue",
+		"/home/david/plates/web/.gitignore",
+		"/home/david/plates/truckoo/python/lib/deregistration.py",
+		"/home/david/plates/web/components/order/create/review_deregistration.vue",
+		"/home/david/plates/web/store/deregistration.js",
+		"/home/david/plates/web/components/order/deregistration/customer.vue",
+		"/home/david/plates/web/store/index.js",
+		"/home/david/plates/web/components/order/create/plateType.vue",
+		"/home/david/plates/web/api.yml",
+		"/home/david/plates/web/components/order/tabs/processed.vue",
+		"/home/david/plates/web/components/order_administration/order_tabs/processed.vue",
+		"/media/david/Touro/backup/david/.kvikna-archive/ssfta/web/plugins/FilterDateFormat.js",
+		"/home/david/plates/truckoo/python/lib/test.py",
+		"/home/david/truckoo/python/plate_tests.pyr",
+		"/home/david/truckoo/python/endpoints/order.py",
+		"/home/david/plates/plugins/api.js",
+		"/home/david/plates/components/review.vue",
+		"/home/david/plates/store/index.js",
+		"/media/david/Touro/backup/david/.kvikna-archive/ssfta/web/plugins/queryApi.js",
+		"/home/david/truckoo/python/utils/Models.py",
+		"/home/david/truckoo/python/lib/m5_base_app.py",
+		"/home/david/plates/components/plateType.vue",
+		"/home/david/plates/pages/index.vue",
+		"/home/david/truckoo/python/requests.pyr",
+		"/home/david/plates/nuxt.config.js",
+		"/media/david/Touro/backup/david/.kvikna-archive/ssfta/web/nuxt.config.js",
+		"/home/david/plates/api.yml",
+		"/home/david/plates/.env",
+		"/media/david/Touro/backup/david/.kvikna-archive/ssfta/web/.env",
+		"/home/david/plates/components/customer.vue"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"parsedSampleData",
+			"id=",
+			"topnav",
+			"print(",
+			"pprint",
+			"console.log",
+			"console",
+			"length",
+			"console",
+			"state.",
+			"item.order",
+			"order.",
+			"shipcl",
+			"_id",
+			"v-list-content",
+			"state.selected",
+			"loadingShip",
+			"selected",
+			"driver",
+			"title",
+			"driver",
+			"order.",
+			"response_registration",
+			"response_driver",
+			"b466",
+			"ERROR",
+			"True",
+			"combobox",
+			"rest",
+			"card",
+			"subheader",
+			"subtitle",
+			"subheader",
+			"title",
+			"template",
+			"v-list",
+			"card",
+			"list-item-subtitle",
+			"upload",
+			"access_url",
+			"this.$ObjectId",
+			"app",
+			"upload",
+			"v-for",
+			"active",
+			"purple",
+			"file_name",
+			"google_file",
+			"id",
+			"username, password",
+			"v-text-field",
+			"access_url",
+			"state.plate.registration",
+			"insert",
+			"user_id",
+			"userId",
+			"orderNo",
+			"user_id",
+			"file_data",
+			"order_no",
+			"user_id",
+			"order_no",
+			"response",
+			"this.file",
+			"# ",
+			"get_data_management_api",
+			"environ.get",
+			"26",
+			"pls this debug log\n",
+			"response",
+			"dictConfig",
+			"header",
+			"headers",
+			"'~/components/order/management/processed.vue'",
+			"{{ processed",
+			"index",
+			"v-for",
+			"order",
+			"order_id",
+			"_id",
+			"console",
+			"console.log",
+			"href",
+			"43",
+			"create",
+			"auth",
+			"cors",
+			"0.0.0.0",
+			"localhost",
+			"path.resolve",
+			"server",
+			"clipped",
+			"icon",
+			"this.claims",
+			"this.$auth.claims",
+			"logout",
+			"fluid",
+			"router-link",
+			"container",
+			"v-for",
+			"loginPassword",
+			"loginUsername",
+			"login",
+			"dialog",
+			"receiver",
+			"customer",
+			"v-model",
+			"id",
+			"v-if",
+			"\"id\"",
+			"id",
+			"v-if",
+			"add_deregistration",
+			"clear_new_recipent",
+			"customer",
+			"orders",
+			"customer",
+			",",
+			"pprint",
+			"print",
+			"console.log",
+			"_id",
+			"; step=2",
+			"_id",
+			"orders/order",
+			"('management',",
+			"loading_ship",
+			"this.loading"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'~/components/order/processed.vue'",
+			"orders/create",
+			""
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 108.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/js.sublime-build",
+	"project": "homedash.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"order",
+				"truckoo/python/endpoints/order.py"
+			],
+			[
+				"api",
+				"web/plugins/api.js"
+			],
+			[
+				"api.js",
+				"web/plugins/api.js"
+			],
+			[
+				"order.vue",
+				"web/components/order/orders.vue"
+			],
+			[
+				"order.js",
+				"web/store/order.js"
+			],
+			[
+				"deregister",
+				"web/components/order/create/deregister.vue"
+			],
+			[
+				"shipme",
+				"web/components/order/shipment.vue"
+			],
+			[
+				"processed",
+				"web/components/order/processed.vue"
+			],
+			[
+				"m5",
+				"truckoo/python/lib/m5_base_app.py"
+			],
+			[
+				"order.py",
+				"truckoo/python/lib/order.py"
+			],
+			[
+				"create",
+				"web/store/orders/create.js"
+			],
+			[
+				"admin",
+				"web/pages/admin.vue"
+			],
+			[
+				"create.js",
+				"web/store/orders/create.js"
+			],
+			[
+				"process",
+				"web/components/order/processed.vue"
+			],
+			[
+				"shipment",
+				"web/components/order/shipment.vue"
+			],
+			[
+				"orders.vue",
+				"web/components/order/orders.vue"
+			],
+			[
+				"admin.vue",
+				"web/pages/admin.vue"
+			],
+			[
+				"review",
+				"web/components/order/create/review.vue"
+			],
+			[
+				"deregist",
+				"web/components/order/create/deregister.vue"
+			],
+			[
+				"plate",
+				"web/components/order/create/plates.vue"
+			],
+			[
+				"nuxt",
+				"web/nuxt.config.js"
+			],
+			[
+				"create.vue",
+				"web/pages/create.vue"
+			],
+			[
+				"endpoint",
+				"truckoo/python/endpoints/order.py"
+			],
+			[
+				"order.p",
+				"truckoo/python/lib/order.py"
+			],
+			[
+				"api.is",
+				"truckoo/python/venv/lib/python3.9/site-packages/py/_vendored_packages/apipkg-1.5.dist-info/INSTALLER"
+			],
+			[
+				"nu",
+				"web/nuxt.config.js"
+			],
+			[
+				"mongo",
+				"web/plugins/mongo.js"
+			],
+			[
+				"orders",
+				"web/components/order/orders.vue"
+			],
+			[
+				"index",
+				"web/pages/index.vue"
+			],
+			[
+				"index.vue",
+				"web/pages/index.vue"
+			],
+			[
+				"base",
+				"truckoo/python/lib/m5_base_app.py"
+			],
+			[
+				"cloud_storage",
+				"truckoo/python/endpoints/cloud_storage.py"
+			],
+			[
+				"dealer",
+				"web/pages/dealer.vue"
+			],
+			[
+				"default",
+				"web/layouts/default.vue"
+			],
+			[
+				"todo",
+				"truckoo/python/lib/todo.txt"
+			],
+			[
+				"crea",
+				"web/store/orders/create.js"
+			],
+			[
+				"layout",
+				"web/layouts/default.vue"
+			],
+			[
+				"dealer.vue",
+				"web/pages/dealer.vue"
+			],
+			[
+				"dealer/",
+				"web/pages/dealer/index.vue"
+			],
+			[
+				"admin/",
+				"web/pages/admin/index.vue"
+			],
+			[
+				"components/order/shipment",
+				"web/components/order/shipment.vue"
+			],
+			[
+				"components/o",
+				"web/components/order/shipment.vue"
+			],
+			[
+				"order/s",
+				"web/components/order/shipment.vue"
+			],
+			[
+				"shipmen",
+				"web/components/order/shipment.vue"
+			],
+			[
+				"store/order",
+				"web/store/order.js"
+			],
+			[
+				"lib/o",
+				"truckoo/python/lib/order.py"
+			],
+			[
+				"ship",
+				"web/components/order/shipment.vue"
+			],
+			[
+				"type",
+				"web/components/order/create/type.vue"
+			],
+			[
+				"shipment.vue",
+				"web/components/order/shipment.vue"
+			],
+			[
+				"reviewD",
+				"web/components/order/create/reviewDeregistration.vue"
+			],
+			[
+				".pyr",
+				"truckoo/python/plate_tests.pyr"
+			],
+			[
+				".txt",
+				"truckoo/python/lib/todo.txt"
+			],
+			[
+				"layouts",
+				"web/layouts/default.vue"
+			],
+			[
+				"endpoints",
+				"truckoo/python/endpoints/order.py"
+			],
+			[
+				"pages/inde",
+				"web/pages/index.vue"
+			],
+			[
+				"endpoin",
+				"truckoo/python/endpoints/order.py"
+			],
+			[
+				".env",
+				"web/.env"
+			],
+			[
+				"lib/",
+				"truckoo/python/lib/m5_base_app.py"
+			],
+			[
+				"api.",
+				"web/plugins/api.js"
+			],
+			[
+				"nuxt.j",
+				"web/nuxt.config.js"
+			],
+			[
+				"user.js",
+				"web/plugins/users.js"
+			],
+			[
+				"nuxt.",
+				"web/nuxt.config.js"
+			],
+			[
+				"flask",
+				"truckoo/python/utils/flask_restx.py"
+			],
+			[
+				"endpoints/order",
+				"truckoo/python/endpoints/order.py"
+			],
+			[
+				"endpoints/or",
+				"truckoo/python/endpoints/order.py"
+			],
+			[
+				"sublime",
+				"truckoo.sublime-project"
+			],
+			[
+				"reviewDe",
+				"web/components/order/create/reviewDeregistration.vue"
+			],
+			[
+				"utils/mongo/__",
+				"truckoo/python/utils/mongo/__init__.py"
+			],
+			[
+				"manage",
+				"web/pages/management.vue"
+			],
+			[
+				"man",
+				"web/store/management.js"
+			],
+			[
+				"mana",
+				"web/pages/management.vue"
+			],
+			[
+				"management",
+				"web/components/order/management/orders.vue"
+			],
+			[
+				"type.",
+				"web/components/order/create/type.vue"
+			],
+			[
+				"plates",
+				"web/components/order/create/plates.vue"
+			],
+			[
+				"deregister.vue",
+				"web/components/order/create/deregister.vue"
+			],
+			[
+				"dereg",
+				"web/components/order/create/deregister.vue"
+			],
+			[
+				"review.vue",
+				"web/components/order/create/review.vue"
+			],
+			[
+				"endpoints/",
+				"truckoo/python/endpoints/order.py"
+			],
+			[
+				"management/or",
+				"web/components/order/management/orders.vue"
+			],
+			[
+				"lib/order.py",
+				"truckoo/python/lib/order.py"
+			],
+			[
+				"management.js",
+				"web/store/management.js"
+			],
+			[
+				"management/",
+				"web/components/order/management/orders.vue"
+			],
+			[
+				"oder.vue",
+				"web/pages/order.vue"
+			],
+			[
+				"history.",
+				"web/components/order/management/history.vue"
+			],
+			[
+				"plates.vue",
+				"web/components/order/create/plates.vue"
+			],
+			[
+				"nuxt.c",
+				"web/nuxt.config.js"
+			],
+			[
+				"index.js",
+				"web/store/index.js"
+			],
+			[
+				"plate_",
+				"truckoo/python/plate_tests.pyr"
+			],
+			[
+				"store/inde",
+				"web/store/index.js"
+			],
+			[
+				"layout/",
+				"web/layouts/default.vue"
+			],
+			[
+				"plugins/api",
+				"web/plugins/api.js"
+			],
+			[
+				"utils/mo",
+				"truckoo/python/utils/mongo/__init__.py"
+			],
+			[
+				"store/index",
+				"plates/store/index.js"
+			],
+			[
+				"page/index",
+				"plates/pages/index.vue"
+			],
+			[
+				"components/",
+				"plates/components/customer.vue"
+			],
+			[
+				"store/index.",
+				"plates/store/index.js"
+			],
+			[
+				"store/index.js",
+				"plates/store/index.js"
+			],
+			[
+				"filter",
+				"python/utils/filters.py"
+			],
+			[
+				"deregistration",
+				"python/lib/deregistration.py"
+			],
+			[
+				"deregistration.py",
+				"python/lib/deregistration.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/plates/truckoo.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
