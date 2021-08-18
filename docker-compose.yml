@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  walk:
+    image: homedash_image
+    container_name: homedash
+    restart: always
+    expose:
+      - "3000"
+    ports:
+      - 3000:3000
+    environment:
+      - HOST=0.0.0.0
+      - POST=3434
