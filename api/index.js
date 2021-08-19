@@ -2,6 +2,8 @@ import express from 'express'
 const fetch = require('node-fetch')
 const cheerio = require('cheerio')
 const cron = require('node-cron');
+const { GoogleSpreadsheet } = require('google-spreadsheet');
+require('dotenv').config()
 
 const app = express()
 
@@ -24,6 +26,26 @@ app.get('/data', async (req, res) => {
         wind
       })
     })
+})
+
+app.get('/spending', async (req, res) => {
+  const doc = new GoogleSpreadsheet(process.env.SPENDING_SHEET);
+  try {
+    await doc.useServiceAccountAuth({
+      client_email: process.env.SERVICE_ACCOUNT,
+      private_key: process.env.PRIVATE_KEY
+    })
+    await doc.loadInfo(); // loads document properties and worksheets
+    let summarySheet = doc.sheetsByTitle['Summary']
+    const rows = await summarySheet.getRows(); // can pass in { limit, offset }
+    res.json({
+      projection: rows[0].Projection,
+      daily: rows[0].Daily
+    })
+
+  } catch (err) {
+    console.log(err)
+  }
 })
 
 /**
