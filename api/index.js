@@ -1,13 +1,16 @@
 import express from 'express'
 const fetch = require('node-fetch')
 const cheerio = require('cheerio')
+const cron = require('node-cron');
 
 const app = express()
 
-app.use(express.json())
+// app.use(express.json())
+
+// cron.schedule('* * * * *', () => {console.log("Task is running every minute " + new Date())});
+
 
 app.get('/data', async (req, res) => {
-  console.log(123)
   return fetch('https://www.oddur.is')
     .then(response => response.text())
     .then((data) => {

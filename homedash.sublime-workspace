@@ -155,6 +155,74 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "pages/index.vue",
+			"settings":
+			{
+				"buffer_size": 436,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "0.0.0."
+					},
+					"BwAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA3wAAAAAAAADfAAAAAAAAAA0AAAAxOTIuMTY4LjMxLjE23wAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAOEAAAAAAAAAAAAAAOEAAAAAAAAA4gAAAAAAAAAAAAAA4gAAAAAAAADjAAAAAAAAAAAAAADjAAAAAAAAAOQAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gAAAAAAAADrAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "0"
+					},
+					"AQAAAOQAAAAAAAAA5QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5AAAAAAAAADkAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nuxt.config.js",
+			"settings":
+			{
+				"buffer_size": 2473,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					9,
+					1,
+					"paste",
+					null,
+					"AgAAAHoFAAAAAAAAsQUAAAAAAAAAAAAAsQUAAAAAAACxBQAAAAAAAAwAAAAgIGF4aW9zOiB7fSw",
+					"AQAAAAAAAAABAAAAhgUAAAAAAAB6BQAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					16,
+					1,
+					"paste",
+					null,
+					"AQAAAC0AAAAAAAAASAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALQAAAAAAAAAtAAAAAAAAAAAAAAAAAAAA"
+				]
+			]
+		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
@@ -184,16 +252,16 @@
 		"selected_items":
 		[
 			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
 				"add",
 				"Project: Add Folder"
 			],
 			[
 				"new buil",
 				"Build: New Build System"
-			],
-			[
-				"color",
-				"UI: Select Color Scheme"
 			],
 			[
 				"trail",
@@ -416,10 +484,33 @@
 	},
 	"expanded_folders":
 	[
-		"/home/david/homedash"
+		"/home/david/homedash",
+		"/home/david/homedash/api",
+		"/home/david/homedash/pages",
+		"/home/david/homedash/store",
+		"/home/david/plates/web",
+		"/home/david/plates/web/components",
+		"/home/david/plates/web/components/order",
+		"/home/david/plates/web/plugins"
 	],
 	"file_history":
 	[
+		"/home/david/homedash/.env",
+		"/home/david/plates/web/pages/index.vue",
+		"/home/david/homedash/nuxt.config.js",
+		"/home/david/airbank/prisma/schema.prisma",
+		"/home/david/airbank/api/index.js",
+		"/home/david/airbank/store/index.js",
+		"/home/david/homedash/api/index.js",
+		"/home/david/homedash/store/index.js",
+		"/home/david/homedash/pages/index.vue",
+		"/home/david/homedash/docker-compose.yml",
+		"/home/david/homedash/Dockerfile",
+		"/home/david/airbank/docker-compose.yml",
+		"/home/david/airbank/Dockerfile",
+		"/home/david/homedash/plugins/oddur.js",
+		"/home/david/plates/web/plugins/api.js",
+		"/home/david/plates/web/nuxt.config.js",
 		"/home/david/homedash/pages/dashboard.vue",
 		"/home/david/test.js",
 		"/home/david/.config/sublime-text/Packages/User/js.sublime-build",
@@ -427,7 +518,6 @@
 		"/home/david/plates/web/components/order/orders.vue",
 		"/home/david/dereg.json",
 		"/home/david/plates/truckoo/python/endpoints/order.py",
-		"/home/david/plates/web/plugins/api.js",
 		"/home/david/plates/web/components/order/create/deregister.vue",
 		"/home/david/plates/web/store/orders/create.js",
 		"/home/david/plates/truckoo/python/lib/order.py",
@@ -442,13 +532,11 @@
 		"/home/david/plates/web/components/order/create/reviewDeregistration.vue",
 		"/home/david/.config/sublime-text/Packages/User/Snippets/platered.sublime-snippet",
 		"/home/david/plates/web/pages/create.vue",
-		"/home/david/plates/web/nuxt.config.js",
 		"/home/david/plates/truckoo/python/endpoints/cloud_storage.py",
 		"/home/david/.config/sublime-text/Packages/User/Snippets/platedereg.sublime-snippet",
 		"/home/david/plates/truckoo/python/venv/lib/python3.9/site-packages/py/_vendored_packages/apipkg-1.5.dist-info/INSTALLER",
 		"/home/david/plates/web/plugins/mongo.js",
 		"/home/david/plates/web/plugins/filters.js",
-		"/home/david/plates/web/pages/index.vue",
 		"/home/david/test3/hello.py",
 		"/home/david/plates/web/pages/dealer.vue",
 		"/home/david/plates/truckoo/python/truckoo-dev-b3667db53e90.json",
@@ -534,24 +622,11 @@
 		"/home/david/truckoo/python/plate_tests.pyr",
 		"/home/david/truckoo/python/endpoints/order.py",
 		"/home/david/plates/plugins/api.js",
-		"/home/david/plates/components/review.vue",
-		"/home/david/plates/store/index.js",
-		"/media/david/Touro/backup/david/.kvikna-archive/ssfta/web/plugins/queryApi.js",
-		"/home/david/truckoo/python/utils/Models.py",
-		"/home/david/truckoo/python/lib/m5_base_app.py",
-		"/home/david/plates/components/plateType.vue",
-		"/home/david/plates/pages/index.vue",
-		"/home/david/truckoo/python/requests.pyr",
-		"/home/david/plates/nuxt.config.js",
-		"/media/david/Touro/backup/david/.kvikna-archive/ssfta/web/nuxt.config.js",
-		"/home/david/plates/api.yml",
-		"/home/david/plates/.env",
-		"/media/david/Touro/backup/david/.kvikna-archive/ssfta/web/.env",
-		"/home/david/plates/components/customer.vue"
+		"/home/david/plates/components/review.vue"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -566,6 +641,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"homedash",
+			"transactions",
+			"placeOrder",
 			"parsedSampleData",
 			"id=",
 			"topnav",
@@ -690,10 +768,7 @@
 			"_id",
 			"; step=2",
 			"_id",
-			"orders/order",
-			"('management',",
-			"loading_ship",
-			"this.loading"
+			"orders/order"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -718,16 +793,107 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "pages/index.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								436,
+								436
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "nuxt.config.js",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								983,
+								983
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 24.0
 	},
 	"input":
 	{
-		"height": 36.0
+		"height": 38.0
 	},
 	"layout":
 	{
@@ -764,7 +930,7 @@
 	"project": "homedash.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -774,15 +940,39 @@
 		"selected_items":
 		[
 			[
+				"nuxt",
+				"homedash/nuxt.config.js"
+			],
+			[
+				"pages/index",
+				"web/pages/index.vue"
+			],
+			[
+				"nuxt.",
+				"homedash/nuxt.config.js"
+			],
+			[
+				"airbank/store/index",
+				"airbank/store/index.js"
+			],
+			[
+				"store/index",
+				"airbank/store/index.js"
+			],
+			[
+				"api.js",
+				"web/plugins/api.js"
+			],
+			[
+				"index.vue",
+				"pages/index.vue"
+			],
+			[
 				"order",
 				"truckoo/python/endpoints/order.py"
 			],
 			[
 				"api",
-				"web/plugins/api.js"
-			],
-			[
-				"api.js",
 				"web/plugins/api.js"
 			],
 			[
@@ -854,10 +1044,6 @@
 				"web/components/order/create/plates.vue"
 			],
 			[
-				"nuxt",
-				"web/nuxt.config.js"
-			],
-			[
 				"create.vue",
 				"web/pages/create.vue"
 			],
@@ -887,10 +1073,6 @@
 			],
 			[
 				"index",
-				"web/pages/index.vue"
-			],
-			[
-				"index.vue",
 				"web/pages/index.vue"
 			],
 			[
@@ -1018,10 +1200,6 @@
 				"web/plugins/users.js"
 			],
 			[
-				"nuxt.",
-				"web/nuxt.config.js"
-			],
-			[
 				"flask",
 				"truckoo/python/utils/flask_restx.py"
 			],
@@ -1140,10 +1318,6 @@
 			[
 				"utils/mo",
 				"truckoo/python/utils/mongo/__init__.py"
-			],
-			[
-				"store/index",
-				"plates/store/index.js"
 			],
 			[
 				"page/index",
