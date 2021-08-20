@@ -31,13 +31,13 @@ app.get('/data', async (req, res) => {
 app.get('/spending', async (req, res) => {
   const doc = new GoogleSpreadsheet(process.env.SPENDING_SHEET);
   try {
-    await doc.useServiceAccountAuth({
+/*    await doc.useServiceAccountAuth({
       client_email: process.env.SERVICE_ACCOUNT,
       private_key: process.env.SERVICE_LOCK.replace(/\\n/g, '\n')
     })
     await doc.loadInfo();
     let summarySheet = doc.sheetsByTitle['Summary']
-    const rows = await summarySheet.getRows();
+    const rows = await summarySheet.getRows();*/
     res.json({
       projection: process.env.SERVICE_LOCK.replace(/\\n/g, '\n'),
     })
