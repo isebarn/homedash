@@ -39,11 +39,12 @@ app.get('/spending', async (req, res) => {
     let summarySheet = doc.sheetsByTitle['Summary']
     const rows = await summarySheet.getRows();*/
     res.json({
-      projection: process.env.GOD,
+      projection: process.env.SERVICE_ACCOUNT,
     })
 
   } catch (err) {
     console.log(err)
+    res.json({hehe: "ok"})
   }
 })
 
