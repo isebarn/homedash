@@ -33,11 +33,11 @@ app.get('/spending', async (req, res) => {
   try {
     await doc.useServiceAccountAuth({
       client_email: process.env.SERVICE_ACCOUNT,
-      private_key: process.env.PRIVATE_KEY
+      private_key: process.env.SERVICE_LOCK.replace(/\\n/g, '\n')
     })
-    await doc.loadInfo(); // loads document properties and worksheets
+    await doc.loadInfo();
     let summarySheet = doc.sheetsByTitle['Summary']
-    const rows = await summarySheet.getRows(); // can pass in { limit, offset }
+    const rows = await summarySheet.getRows();
     res.json({
       projection: rows[0].Projection,
       daily: rows[0].Daily
