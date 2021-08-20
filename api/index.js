@@ -29,7 +29,7 @@ app.get('/data', async (req, res) => {
 })
 
 app.get('/spending', async (req, res) => {
-  const doc = new GoogleSpreadsheet(process.env.SPENDING_SHEET);
+  // const doc = new GoogleSpreadsheet(process.env.SPENDING_SHEET);
   try {
 /*    await doc.useServiceAccountAuth({
       client_email: process.env.SERVICE_ACCOUNT,
