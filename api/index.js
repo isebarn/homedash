@@ -29,18 +29,17 @@ app.get('/data', async (req, res) => {
 })
 
 app.get('/spending', async (req, res) => {
-  const doc = new GoogleSpreadsheet(process.env.SPENDING_SHEET);
+  // const doc = new GoogleSpreadsheet(process.env.SPENDING_SHEET);
   try {
-    await doc.useServiceAccountAuth({
+/*    await doc.useServiceAccountAuth({
       client_email: process.env.SERVICE_ACCOUNT,
       private_key: "-----BEGIN PRIVATE KEY-----\n" + process.env.SERVICE. + "\n-----END PRIVATE KEY-----\n""
     })
     await doc.loadInfo();
     let summarySheet = doc.sheetsByTitle['Summary']
-    const rows = await summarySheet.getRows();
+    const rows = await summarySheet.getRows();*/
     res.json({
-      projection: rows[0].Projection,
-      daily: rows[0].Daily
+      projection: rowsprocess.env.SERVICE,
     })
 
   } catch (err) {
