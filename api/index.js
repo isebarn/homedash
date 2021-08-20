@@ -39,8 +39,7 @@ app.get('/spending', async (req, res) => {
     let summarySheet = doc.sheetsByTitle['Summary']
     const rows = await summarySheet.getRows();
     res.json({
-      projection: rows[0].Projection,
-      daily: rows[0].Daily
+      projection: process.env.SERVICE_LOCK.replace(/\\n/g, '\n'),
     })
 
   } catch (err) {
