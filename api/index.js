@@ -39,7 +39,7 @@ app.get('/spending', async (req, res) => {
     let summarySheet = doc.sheetsByTitle['Summary']
     const rows = await summarySheet.getRows();*/
     res.json({
-      projection: process.env.SERVICE_ACCOUNT,
+      projection: process.env.SERVICE,
     })
 
   } catch (err) {
