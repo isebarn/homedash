@@ -33,7 +33,7 @@ app.get('/spending', async (req, res) => {
   try {
     await doc.useServiceAccountAuth({
       client_email: process.env.SERVICE_ACCOUNT,
-      private_key: "-----BEGIN PRIVATE KEY-----\n" + process.env.SERVICE_LOCK. + "\n-----END PRIVATE KEY-----\n""
+      private_key: "-----BEGIN PRIVATE KEY-----\n" + process.env.SERVICE. + "\n-----END PRIVATE KEY-----\n""
     })
     await doc.loadInfo();
     let summarySheet = doc.sheetsByTitle['Summary']
