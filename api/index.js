@@ -6,6 +6,7 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 require('dotenv').config()
 
 const app = express()
+app.use(express.json());
 
 // app.use(express.json())
 
@@ -46,6 +47,29 @@ app.get('/spending', async (req, res) => {
   } catch (err) {
     console.log(err)
   }
+})
+
+app.post('/spending/purchase', async (req, res) => {
+  const doc = new GoogleSpreadsheet(process.env.SPENDING_SHEET);
+  try {
+    await doc.useServiceAccountAuth({
+      client_email: process.env.SERVICE_ACCOUNT,
+      private_key: process.env.SERVICE
+    })
+    await doc.loadInfo();
+
+    let sheet = doc.sheetsByTitle['Transactions']
+    const result = await sheet.addRow(req.body);
+    console.log(1)
+    console.log(2)
+
+    res.json({ success: req.body })
+
+  } catch (err) {
+    console.log(3)
+    console.log(err)
+  }
+  console.log(4)
 })
 
 /**

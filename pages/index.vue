@@ -53,9 +53,13 @@ export default {
 
   mounted () {
     this.weatherData()
-    this.spendingData()
     setInterval(() => {
       this.weatherData()
+    }, 1800000)
+
+    this.spendingData()
+    setInterval(() => {
+      this.spendingData()
     }, 1800000)
   },
 
