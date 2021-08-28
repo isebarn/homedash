@@ -127,15 +127,22 @@ export default {
     responsive: true,
     responsiveInput: true
   }),
+  computed: {
+    ...mapGetters({
+      drawer: 'app/getDrawer'
+    })
+  },
   watch: {
     '$route' (val) {
       this.title = val.name
     }
   },
-  computed: {
-    ...mapGetters({
-      drawer: 'app/getDrawer'
-    })
+  mounted () {
+    this.onResponsiveInverted()
+    window.addEventListener('resize', this.onResponsiveInverted)
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.onResponsiveInverted)
   },
   methods: {
     ...mapActions({
@@ -162,13 +169,6 @@ export default {
       await this.setUsername(null)
       this.$router.push({ path: '/' })
     }
-  },
-  mounted () {
-    this.onResponsiveInverted()
-    window.addEventListener('resize', this.onResponsiveInverted)
-  },
-  beforeDestroy () {
-    window.removeEventListener('resize', this.onResponsiveInverted)
   }
 }
 </script>

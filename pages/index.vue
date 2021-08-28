@@ -5,7 +5,7 @@
     grid-list-xl
   >
     <v-layout wrap>
-      <v-flex xs6 m3>
+      <v-flex lg6 md6 sm12>
         <material-stats-card
           color="green"
           icon="mdi-weather-cloudy"
@@ -15,7 +15,7 @@
           sub-text="oddur.is"
         />
       </v-flex>
-      <v-flex xs6 m3>
+      <v-flex lg6 md6 sm12>
         <material-stats-card
           color="info"
           icon="mdi-cash-multiple"
@@ -26,7 +26,7 @@
           @click="$router.push('purchase')"
         />
       </v-flex>
-      <v-flex xs6 m3>
+      <v-flex lg6 md6 sm12>
         <material-stats-card
           color="blue"
           icon="mdi-format-list-checks"

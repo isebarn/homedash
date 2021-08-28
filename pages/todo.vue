@@ -95,6 +95,12 @@ export default {
     }
   },
 
+  mounted () {
+    this.$axios.get('/api/todo').then((response) => {
+      this.updateTodo(response.data)
+    })
+  },
+
   methods: {
     ...mapActions(['updateTodo']),
 
@@ -133,12 +139,6 @@ export default {
         this.loading = false
       })
     }
-  },
-
-  mounted () {
-    this.$axios.get('/api/todo').then((response) => {
-      this.updateTodo(response.data)
-    })
   }
 }
 </script>
