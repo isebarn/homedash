@@ -3,6 +3,8 @@ const fetch = require('node-fetch')
 const cheerio = require('cheerio')
 const cron = require('node-cron');
 const { GoogleSpreadsheet } = require('google-spreadsheet');
+var MongoClient = require('mongodb').MongoClient
+const ObjectId = require('mongodb').ObjectId;
 require('dotenv').config()
 
 const app = express()
@@ -60,16 +62,68 @@ app.post('/spending/purchase', async (req, res) => {
 
     let sheet = doc.sheetsByTitle['Transactions']
     const result = await sheet.addRow(req.body);
-    console.log(1)
-    console.log(2)
 
     res.json({ success: req.body })
 
   } catch (err) {
-    console.log(3)
     console.log(err)
   }
   console.log(4)
+})
+
+app.get('/todo', async (req, res) => {
+  try {
+
+    MongoClient.connect(process.env.MONGO, function (err, client) {
+
+      var db = client.db('homedash')
+
+      db.collection('todo').find().toArray(function (err, result) {
+        if (err) throw err
+
+        res.json(result)
+      })
+    })
+  } catch (err) {
+    console.log(err)
+  }
+})
+
+app.post('/todo', async (req, res) => {
+  MongoClient.connect(process.env.MONGO, function (err, client) {
+    var db = client.db('homedash')
+    db.collection("todo").insertOne(req.body, function(err, result) {
+      if (err) throw err;
+      client.close();
+      res.json(result)
+    });
+  })
+})
+
+app.patch('/todo', async (req, res) => {
+  MongoClient.connect(process.env.MONGO, function (err, client) {
+    var db = client.db('homedash')
+    console.log(req.body)
+    db.collection("todo").updateOne({ _id: new ObjectId(req.body.query._id)}, { $set: req.body.set } , function(err, result) {
+      if (err) throw err;
+      client.close();
+
+      res.json({success: true})
+    });
+  })
+})
+
+app.delete('/todo/:id', async (req, res) => {
+  MongoClient.connect(process.env.MONGO, function (err, client) {
+    var db = client.db('homedash')
+    const { id } = req.params
+    db.collection("todo").deleteOne({ _id: new ObjectId(id)} , function(err, result) {
+      if (err) throw err;
+      client.close();
+
+      res.json({success: true})
+    });
+  })
 })
 
 /**

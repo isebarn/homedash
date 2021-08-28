@@ -23,6 +23,18 @@
           :value="spending.daily"
           sub-icon="mdi-finance"
           :sub-text="spending.projection"
+          @click="$router.push('purchase')"
+        />
+      </v-flex>
+      <v-flex xs6 m3>
+        <material-stats-card
+          color="blue"
+          icon="mdi-format-list-checks"
+          title="Todo"
+          :value="todo_items[0] ? todo_items[0].item : 'All done'"
+          sub-icon="mdi-format-list-bulleted"
+          :sub-text="todo_items.length"
+          @click="$router.push('todo')"
         />
       </v-flex>
     </v-layout>
@@ -40,7 +52,7 @@ export default {
   },
 
   computed: {
-    ...mapFields(['weather', 'spending']),
+    ...mapFields(['weather', 'spending', 'todo']),
 
     weatherText () {
       if (this.weather.length > 0) {
@@ -48,6 +60,10 @@ export default {
         return item.temperature + ' - ' + item.wind + 'm/s'
       }
       return ''
+    },
+
+    todo_items () {
+      return this.todo.filter(x => !x.complete)
     }
   },
 
@@ -61,10 +77,15 @@ export default {
     setInterval(() => {
       this.spendingData()
     }, 1800000)
+
+    this.todoData()
+    setInterval(() => {
+      this.todoData()
+    }, 1800000)
   },
 
   methods: {
-    ...mapActions(['updateWeather', 'updateSpending']),
+    ...mapActions(['updateWeather', 'updateSpending', 'updateTodo']),
 
     weatherData () {
       this.$axios.get('/api/data').then((response) => {
@@ -75,6 +96,11 @@ export default {
     spendingData () {
       this.$axios.get('/api/spending').then((response) => {
         this.updateSpending(response.data)
+      })
+    },
+    todoData () {
+      this.$axios.get('/api/todo').then((response) => {
+        this.updateTodo(response.data)
       })
     }
   }
