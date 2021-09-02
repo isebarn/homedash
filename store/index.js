@@ -3,7 +3,12 @@ import { getField, updateField } from 'vuex-map-fields'
 export const state = () => ({
   weather: [],
   spending: {},
-  todo: []
+  todo: [],
+  article: {
+    _id: null,
+    title: '',
+    content: ''
+  }
 })
 
 export const mutations = {
@@ -19,6 +24,11 @@ export const mutations = {
 
   todo: (state, payload) => {
     state.todo = payload
+  },
+  article: (state, payload) => {
+    if (payload) {
+      state.article = payload
+    }
   }
 }
 
@@ -35,5 +45,8 @@ export const actions = {
   },
   updateTodo ({ commit }, data) {
     commit('todo', data)
+  },
+  setArticle ({ commit }, data) {
+    commit('article', data)
   }
 }

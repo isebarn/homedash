@@ -103,7 +103,6 @@ app.post('/todo', async (req, res) => {
 app.patch('/todo', async (req, res) => {
   MongoClient.connect(process.env.MONGO, function (err, client) {
     var db = client.db('homedash')
-    console.log(req.body)
     db.collection("todo").updateOne({ _id: new ObjectId(req.body.query._id)}, { $set: req.body.set } , function(err, result) {
       if (err) throw err;
       client.close();
@@ -126,9 +125,62 @@ app.delete('/todo/:id', async (req, res) => {
   })
 })
 
-/**
-* logic for our api will go here
-*/
+/// Article endpoints
+app.get('/article', async (req, res) => {
+  try {
+
+    MongoClient.connect(process.env.MONGO, function (err, client) {
+
+      var db = client.db('homedash')
+
+      db.collection('article').find().toArray(function (err, result) {
+        if (err) throw err
+
+        res.json(result)
+      })
+    })
+  } catch (err) {
+    console.log(err)
+  }
+})
+
+app.post('/article', async (req, res) => {
+  MongoClient.connect(process.env.MONGO, function (err, client) {
+    var db = client.db('homedash')
+    db.collection("article").insertOne(req.body, function(err, result) {
+      if (err) throw err;
+      client.close();
+      res.json(result)
+    });
+  })
+})
+
+app.patch('/article', async (req, res) => {
+  MongoClient.connect(process.env.MONGO, function (err, client) {
+    var db = client.db('homedash')
+    db.collection("article").updateOne({ _id: new ObjectId(req.body.query._id)}, { $set: req.body.set } , function(err, result) {
+      if (err) throw err;
+      client.close();
+
+      res.json({success: true})
+    });
+  })
+})
+
+app.delete('/article/:id', async (req, res) => {
+  MongoClient.connect(process.env.MONGO, function (err, client) {
+    var db = client.db('homedash')
+    const { id } = req.params
+    db.collection("article").deleteOne({ _id: new ObjectId(id)} , function(err, result) {
+      if (err) throw err;
+      client.close();
+
+      res.json({success: true})
+    });
+  })
+})
+/////////////////
+
 export default {
   path: '/api',
   handler: app
