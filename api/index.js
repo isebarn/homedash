@@ -100,6 +100,26 @@ app.post('/todo', async (req, res) => {
   })
 })
 
+app.post('/todo/all', async (req, res) => {
+  MongoClient.connect(process.env.MONGO, function (err, client) {
+    var db = client.db('homedash')
+    db.collection("todo").deleteMany({}, function(err, result) {
+      if (err) throw err;
+    });
+
+    let items = req.body.items
+    for (var i = items.length - 1; i >= 0; i--) {
+      items[i]._id = new ObjectId(items[i]._id)
+    }
+
+    db.collection("todo").insertMany(req.body.items, function(err, result) {
+      if (err) throw err;
+      client.close();
+      res.json(result)
+    });
+  })
+})
+
 app.patch('/todo', async (req, res) => {
   MongoClient.connect(process.env.MONGO, function (err, client) {
     var db = client.db('homedash')

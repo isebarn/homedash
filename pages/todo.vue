@@ -36,45 +36,41 @@
         </v-toolbar>
         </v-toolbar>
       </v-list-item>
-      <v-list-item v-for="item in todo_items" :key="item._id">
-        <v-list-item-avatar>
-          <v-icon v-if="item.complete" color="success" @click="set_complete(item)">
-            mdi-check-all
-          </v-icon>
-          <v-icon v-else @click="set_complete(item)">
-            mdi-check
-          </v-icon>
-        </v-list-item-avatar>
-        <v-list-item-content>
-          {{ item.item }}
-        </v-list-item-content>
-        <v-list-item-action>
-          <v-btn icon @click="delete_item(item)">
-            <v-icon color="red lighten-1">
-              mdi-close-thick
+      <draggable v-model="todo" @start="drag=true" @end="drag=false">
+        <v-list-item v-for="item in todo" :key="item._id">
+          <v-list-item-avatar>
+            <v-icon v-if="item.complete" color="success" @click="set_complete(item)">
+              mdi-check-all
             </v-icon>
-          </v-btn>
-        </v-list-item-action>
-      </v-list-item>
+            <v-icon v-else @click="set_complete(item)">
+              mdi-check
+            </v-icon>
+          </v-list-item-avatar>
+          <v-list-item-content>
+            {{ item.item }}
+          </v-list-item-content>
+          <v-list-item-action>
+            <v-btn icon @click="delete_item(item)">
+              <v-icon color="red lighten-1">
+                mdi-close-thick
+              </v-icon>
+            </v-btn>
+          </v-list-item-action>
+        </v-list-item>
+      </draggable>
     </v-list>
   </v-container>
 </template>
 
 <script>
 import { mapActions } from 'vuex'
-import { mapFields } from 'vuex-map-fields'
-/*
-import { mapFields } from 'vuex-map-fields'
-
-how does todo work
-you create item, it goes to db.
-if you create item, list is updated automatically in store
-all items are in store
-store updates every 30 minutes automatically
-store needs an action that updates this will be called from index and when opening /todo
-*/
+import draggable from 'vuedraggable'
 
 export default {
+
+  components: {
+    draggable
+  },
 
   data () {
     return {
@@ -85,13 +81,30 @@ export default {
   },
 
   computed: {
-    ...mapFields(['todo']),
-
-    todo_items () {
-      return this.todo.filter(x =>
-        this.complete_filter === null
-          ? this.todo
-          : x.complete === this.complete_filter)
+    todo: {
+      get () {
+        return this.$store.state.todo.filter(x =>
+          this.complete_filter === null
+            ? this.$store.state.todo
+            : x.complete === this.complete_filter)
+      },
+      set (value) {
+        const newList = []
+        let counter = 0
+        for (let i = 0; i < this.$store.state.todo.length; i++) {
+          if (value.find(x => x === this.$store.state.todo[i])) {
+            newList.push(value[counter])
+            counter++
+          } else {
+            newList.push(this.$store.state.todo[i])
+          }
+        }
+        // this.$store.commit('todo', newList)
+        this.$axios.post('/api/todo/all', {
+          items: newList
+        })
+        this.updateTodo(newList)
+      }
     }
   },
 
