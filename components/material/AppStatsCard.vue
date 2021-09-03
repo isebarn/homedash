@@ -5,6 +5,7 @@
     v-on="$listeners"
   >
     <v-card
+      v-if="icon !== 'null'"
       slot="offset"
       :class="`elevation-${elevation}`"
       :color="color"

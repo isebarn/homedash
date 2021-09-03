@@ -76,6 +76,25 @@ app.get('/spending', async (req, res) => {
   }
 })
 
+app.get('/v1/purchase', async (req, res) => {
+  try {
+
+    MongoClient.connect(process.env.MONGO, function (err, client) {
+
+      var db = client.db('homedash')
+
+      db.collection('purchase').find().toArray(function (err, result) {
+        if (err) throw err
+
+        res.json(result)
+      })
+    })
+  } catch (err) {
+    console.log(err)
+  }
+})
+
+
 app.post('/spending/purchase', async (req, res) => {
   const doc = new GoogleSpreadsheet(process.env.SPENDING_SHEET);
   try {
