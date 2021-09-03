@@ -17,8 +17,8 @@ app.use(express.json());
 
 app.get('/data', async (req, res) => {
   return fetch('https://www.oddur.is')
-    .then(response => response.text())
-    .then((data) => {
+    .then(response => { res.json({temperature: 1, wind: 1})})
+/*    .then((data) => {
       const parsed = cheerio.load(data)
       const text = parsed('.topnav').children('h2:first').text().trim()
       const values = text.split(' - ')
@@ -28,7 +28,7 @@ app.get('/data', async (req, res) => {
         temperature,
         wind
       })
-    })
+    })*/
 })
 
 app.get('/spending', async (req, res) => {
