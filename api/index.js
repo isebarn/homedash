@@ -16,7 +16,7 @@ app.use(express.json());
 
 // cron.schedule('* * * * *', () => {console.log("Task is running every minute " + new Date())});
 
-app.get('/test', async (req, res) => {
+app.get('/data', async (req, res) => {
   const curlTest = new Curl();
   const terminate = curlTest.close.bind(curlTest);
   curlTest.setOpt(Curl.option.URL, "https://www.oddur.is");
@@ -39,7 +39,8 @@ app.get('/test', async (req, res) => {
 })
 
 
-app.get('/data', async (req, res) => {
+// discontinued
+app.get('/v1/data', async (req, res) => {
   return fetch('https://www.oddur.is')
     .then(response => response.text())
     .then((data) => {
