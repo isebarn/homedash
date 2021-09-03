@@ -10,7 +10,7 @@
         Quick
       </v-tab>
       <v-tab>
-        Recent
+        Advanced
       </v-tab>
     </v-tabs>
     <v-tabs-items v-model="tab">
@@ -33,6 +33,7 @@
                 v-model="quick_item.Amount"
                 name="Amount"
                 label="Amount"
+                type="tel"
               />
             </v-layout>
             <v-btn block @click="quick_item_send">
