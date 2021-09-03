@@ -27,12 +27,17 @@
               :sub-text="item.Source + ' - ' + item.Person"
               @click="quick_item=item"
             />
-            <v-text-field
-              v-else
-              v-model="quick_item.Amount"
-              name="Amount"
-              label="Amount"
-            />
+            <v-layout v-else>
+              <v-text-field
+
+                v-model="quick_item.Amount"
+                name="Amount"
+                label="Amount"
+              />
+            </v-layout>
+            <v-btn block @click="quick_item_send">
+              Save
+            </v-btn>
           </v-flex>
         </v-card>
       </v-tab-item>
@@ -144,7 +149,7 @@
               <v-text-field v-model="amount" label="amount" type="tel" />
               <v-text-field v-model="description" label="description" />
               <v-card-actions>
-                <v-btn color="green" block @click="send">
+                <v-btn block color="green" @click="send">
                   Send
                 </v-btn>
               </v-card-actions>
@@ -204,12 +209,18 @@ export default {
 
   mounted () {
     this.$axios.get('/api/v1/purchase').then((response) => {
-      console.log(response)
       this.favorites = response.data
     })
   },
 
   methods: {
+    quick_item_send () {
+      this.quick_item.Date = new Date().toISOString().slice(0, 10)
+      this.$axios.post('/api/spending/purchase', this.quick_item).then((response) => {
+        this.$router.push('/')
+      })
+    },
+
     send () {
       this.$axios.post('/api/spending/purchase', {
         Date: new Date().toISOString().slice(0, 10),

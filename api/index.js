@@ -112,7 +112,6 @@ app.post('/spending/purchase', async (req, res) => {
   } catch (err) {
     console.log(err)
   }
-  console.log(4)
 })
 
 app.get('/todo', async (req, res) => {
