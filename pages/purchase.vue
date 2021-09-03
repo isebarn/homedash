@@ -104,7 +104,7 @@
           class="mx-auto"
           flat
         >
-          <v-text-field v-model="amount" label="amount" />
+          <v-text-field v-model="amount" label="amount" type="tel" />
           <v-text-field v-model="description" label="description" />
           <v-card-actions>
             <v-btn color="green" block @click="send">
