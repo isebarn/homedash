@@ -64,7 +64,7 @@ app.get('/spending', async (req, res) => {
       private_key: process.env.SERVICE
     })
     await doc.loadInfo();
-    let summarySheet = doc.sheetsByTitle['Summary']
+    let summarySheet = doc.sheetsByIndex[1]
     const rows = await summarySheet.getRows();
     res.json({
       projection: rows[0].Projection,
